@@ -1,0 +1,62 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#screen {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#card {
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 10px;
+    border: solid 1px black;
+}
+
+#card-content {
+    padding: 0;
+    margin: 0;
+    background-color: #88bfbd;
+    overflow: hidden;
+    padding: 10px ;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: monospace;
+    text-transform: lowercase;
+    margin: 15px 0px;
+}
+
+.section-line {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
+    margin: 0px 0px;
+}
+
+.section-line label {
+    min-width: 130px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fields input {
+    /* height: 100%; */
+    width: 100%;
+}
