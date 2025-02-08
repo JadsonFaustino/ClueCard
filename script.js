@@ -36,6 +36,10 @@ const resetAll = () => {
     const userConfirm = confirm("Tem certeza de que deseja reiniciar o cartão? Isso apagará todos os campos.");
     if (userConfirm) {
         fields.forEach(field => field.value = '');
+        fieldsTitle.forEach(title => {
+            title.dataset['tag'] = fieldTags[2];
+            updateTagStyle(title);
+        });
         saveAllFields();
     }
 }
@@ -56,7 +60,7 @@ const loadAllFields = () => {
 fields.forEach(field =>
     field.addEventListener('keyup', saveAllFields)
 )
-fieldsTitle.forEach(title => 
+fieldsTitle.forEach(title =>
     title.addEventListener('click', saveAllFields)
 )
 
